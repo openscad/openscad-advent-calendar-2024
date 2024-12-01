@@ -13,3 +13,7 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Nessie/Nessie.png" width="250">
 <p>Real, maybe.</p>
 
+## 23. Night Hawks (Ulrich Bär | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/NightHawks/NightHawks.png" width="250">
+<p> NightHawks by Edward Hopper </p>
+
