@@ -17,3 +17,6 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/NightHawks/NightHawks.png" width="250">
 <p> NightHawks by Edward Hopper </p>
 
+## 24. Christmas from A-Z (Stone Age Sculptor | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/ChristmasA-Z/ChristmasA-Z.gif" width="250">
+<p> Font animation </p>
