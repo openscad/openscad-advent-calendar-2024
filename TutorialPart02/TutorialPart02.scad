@@ -3,9 +3,9 @@
  */
 
 // In part 2, we'll introduce the  geometric primitives OpenSCAD provides.
-// Combining those shapes is the main way of constructing models. This is
-// called CSG, Constructive Sold Geometry which is the topic of a later
-// part.
+// Combining those shapes is the main way of constructing models. This
+// is called CSG, Constructive Sold Geometry which is the topic of a
+// later part.
 //
 // https://en.wikipedia.org/wiki/Constructive_solid_geometry
 
@@ -22,10 +22,10 @@ step = 1; // [1:8]
 // 2D primitives are limited to live in the X/Y plane, it's not possible
 // to position them in 3D space.
 //
-// => The preview (F5) shows 2D primitives with 1 unit thickness which can
-// be a bit confusing when working with very small objects.
-// => Use the render (F6) display for a different view that clearly shows
-// the 2D shapes.
+// => The preview (F5) shows 2D primitives with 1 unit thickness which
+// can be a bit confusing when working with very small objects.
+// => Use the render (F6) display for a different view that clearly
+// shows the 2D shapes.
 
 if (step == 1) {
 
@@ -49,8 +49,8 @@ square([30, 10], center = true);
 /*** STEP 3 ***/
 
 // The second 2D primitive is the circle() which can be specified by
-// radius or diameter. The circle() primitive is always centered at
-// the origin in the X/Y plane.
+// radius or diameter. The circle() primitive is always centered at the
+// origin in the X/Y plane.
 
 if (step == 3) {
 
@@ -61,9 +61,9 @@ circle(d = 30);
 /*** STEP 4 ***/
 
 // The third 2D primitive is the polygon which can generate even pretty
-// complex shapes by listing all the point of the shape. Polygons are
-// always closed, it's not needed to give an identical start and end
-// point.
+// complex shapes by listing all the point of the shape. Polygons
+// are always closed, it's not needed to give an identical start and
+// end point.
 
 if (step == 4) {
 
@@ -73,10 +73,9 @@ polygon([ [0, 0], [0, 20], [20, 0], [20, -5], [5, 10], [5, 0] ]);
 
 /*** STEP 5 ***/
 
-// Now we come to the 3D primitives, OpenSCAD has 4 of those, the
-// cube() we have already seen, so lets move on to the sphere().
-// Similar to the circle(), we can give the size as radius or as
-// diameter.
+// Now we come to the 3D primitives, OpenSCAD has 4 of those, the cube()
+// we have already seen, so lets move on to the sphere().  Similar to
+// the circle(), we can give the size as radius or as diameter.
 
 if (step == 5) {
 
@@ -86,10 +85,10 @@ sphere(r = 12);
 
 /*** STEP 6 ***/
 
-// The third 3D primitive is the cylinder() which can not just
-// generate cyliders, but also (optionally truncated) cones. Cylinders are always centered
-// around the Z axis, and by default are sitting on top of the X/Y
-// plane. Using center = true, it's possible to also center the
+// The third 3D primitive is the cylinder() which can not just generate
+// cyliders, but also (optionally truncated) cones. Cylinders are always
+// centered around the Z axis, and by default are sitting on top of
+// the X/Y plane. Using center = true, it's possible to also center the
 // generated primitive in Z direction.
 
 if (step == 6) {
@@ -114,12 +113,13 @@ cylinder(r1 = 10, r2 = 2, h = 20, center = true);
 
 // The fourth and last 3D primitive is the polyhedron() which is not
 // easy to define as it needs both a list of all the points and a list
-// of faces which are required to fo´llow a number of rules.
-// So we will only show an example here but skip details for now.
+// of faces which are required to fo´llow a number of rules.  So we
+// will only show an example here but skip details for now.
 
 if (step == 8) {
 
-polyhedron([
+polyhedron(
+	[
 		[10, 10, -8], [10, -10, -8], [-10, -10, -8], [-10, 10, -8],
 		[12, 12,  0], [12, -12,  0], [-12, -12,  0], [-12, 12,  0],
 		[ 6,  6,  8], [ 6,  -6,  8], [ -6,  -6,  8], [ -6,  6,  8]
@@ -129,15 +129,15 @@ polyhedron([
 		[4, 5, 9, 8], [5, 6, 10, 9], [6, 7, 11, 10], [7, 4, 8, 11],
 		[8, 9, 10, 11] // top
 	]
-	);
+);
 
 }
 
 /*** THE END ***/
 
-// With that, we have all the building blocks for generating more
-// complex models, but so far the primitives (except polygon() and
-// polyhedron() are always in the same place and orientation.
+// With that, we have all the building blocks for generating more complex
+// models, but so far the primitives (except polygon() and polyhedron()
+// are always in the same place and orientation.
 // Tomorrow we'll see how to move things around.
 
 /*********************************************************************/
