@@ -2,7 +2,7 @@
  * Welcome to the Advent Calendar - Tutorial Edition - Part 02
  */
 
-// In part 2, we'll introduce the  geometric primitives OpenSCAD provides.
+// In part 2, we'll introduce the geometric primitives OpenSCAD provides.
 // Combining those shapes is the main way of constructing models. This
 // is called CSG, Constructive Sold Geometry which is the topic of a
 // later part.
@@ -42,14 +42,14 @@ square(12);
 
 if (step == 2) {
 
-square([30, 10], center = true);
+square(size=[30, 10], center = true);
 
 }
 
 /*** STEP 3 ***/
 
 // The second 2D primitive is the circle() which can be specified by
-// radius or diameter. The circle() primitive is always centered at the
+// radius "r=" or diameter "d=". The circle() primitive is always centered at the
 // origin in the X/Y plane.
 
 if (step == 3) {
@@ -63,18 +63,22 @@ circle(d = 30);
 // The third 2D primitive is the polygon which can generate even pretty
 // complex shapes by listing all the point of the shape. Polygons
 // are always closed, it's not needed to give an identical start and
-// end point.
+// end point. As this can get very complex It may help to write the points in different lines.
 
 if (step == 4) {
 
-polygon([ [0, 0], [0, 20], [20, 0], [20, -5], [5, 10], [5, 0] ]);
+polygon([
+	[0, 0], [0, 20],
+	[20, 0], [20, -5],
+	[5, 10], [5, 0] 
+]);
 
 }
 
 /*** STEP 5 ***/
 
 // Now we come to the 3D primitives, OpenSCAD has 4 of those, the cube()
-// we have already seen, so lets move on to the sphere().  Similar to
+// we have already seen, so lets move on to the sphere(). Similar to
 // the circle(), we can give the size as radius or as diameter.
 
 if (step == 5) {
