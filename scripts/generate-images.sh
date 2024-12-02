@@ -50,4 +50,5 @@ tut() {
 #img Tree		--camera 0,0,35,72,0,60,220
 #img Nessie		--camera -20,10,10,65,0,300,260
 #tut TutorialPart01	--camera 0,0,0,55,0,25,100
-tut TutorialPart02	--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+#tut TutorialPart02	--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+tut TutorialPart03	--render=solid --backend=manifold --camera 0,0,0,55,0,25,100

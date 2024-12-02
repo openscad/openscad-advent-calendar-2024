@@ -15,6 +15,11 @@ setDay(3, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart02',
         src: 'TutorialPart02.scad',
 	info: '<p>Tutorial Part 2, Primitive Geometries in 2D and 3D.</p>'
 });
+setDay(4, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart03',
+        img: 'TutorialPart03.gif',
+        src: 'TutorialPart03.scad',
+	info: '<p>Tutorial Part 3, Transformations.</p>'
+});
 setDay(8, { author: 'Ulrich Bär', license: 'CC0', dir: 'Coaster',
         img: 'Coaster.png',
         src: 'Coaster.scad',
