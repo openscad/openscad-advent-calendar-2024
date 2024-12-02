@@ -10,7 +10,7 @@
 // https://en.wikipedia.org/wiki/Constructive_solid_geometry
 
 // There are 2 main categories of primitives: 2D and 3D. OpenSCAD only
-// provides a very minimalistic list of primitives in those 2 categories
+// provides a very minimalistic list of primitives in those 2 categories.
 
 step = 1; // [1:8]
 
@@ -113,8 +113,9 @@ cylinder(r1 = 10, r2 = 2, h = 20, center = true);
 
 // The fourth and last 3D primitive is the polyhedron() which is not
 // easy to define as it needs both a list of all the points and a list
-// of faces which are required to fo´llow a number of rules.  So we
-// will only show an example here but skip details for now.
+// of faces which are required to fo´llow a number of rules.
+// We will only show an example here but skip it for this tutorial,
+// it's complicated and powerful enough to deserve it's own tutorial.
 
 if (step == 8) {
 
