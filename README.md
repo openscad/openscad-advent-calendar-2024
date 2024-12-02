@@ -9,6 +9,10 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart01/TutorialPart01.gif" width="250">
 <p>Tutorial Part 1, Introduction.</p>
 
+## 3. TutorialPart02 (Torsten Paul | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart02/TutorialPart02.gif" width="250">
+<p>Tutorial Part 2, Primitive Geometries in 2D and 3D.</p>
+
 ## 8. Coaster (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Coaster/Coaster.png" width="250">
 
