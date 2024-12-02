@@ -63,14 +63,14 @@ circle(d = 30);
 // The third 2D primitive is the polygon which can generate even pretty
 // complex shapes by listing all the point of the shape. Polygons
 // are always closed, it's not needed to give an identical start and
-// end point. As this can get very complex It may help to write the points in different lines.
+// end point. As this can get very complex it may help to write the points in different lines.
 
 if (step == 4) {
 
 polygon([
-	[0, 0], [0, 20],
-	[20, 0], [20, -5],
-	[5, 10], [5, 0] 
+	[ 0,  0], [ 0, 20],
+	[20,  0], [20, -5],
+	[ 5, 10], [ 5,  0] 
 ]);
 
 }
