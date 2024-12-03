@@ -19,7 +19,8 @@ img() {
 tut() {
 (
 	N="$1"
-	shift
+	TITLE="$2"
+	shift 2
 	cd "$N"
 	CNT=$(egrep '^step\s*=.*//.*\[[0-9]+:[0-9]+\]' "$N".scad | sed -E 's,^.*\[[0-9]+:(.*)\].*$,\1,')
 	echo "$(date +%FT%T): Tutorial '$N', $CNT steps, params $@"
@@ -29,7 +30,7 @@ tut() {
 		T=$(printf "${N}.tmp-%04d.png" $step)
 		I=$(printf "${N}.%04d.png" $step)
 		if [ $step -eq 0 ]; then
-			TEXT=""
+			TEXT="$TITLE"
 			"$OPENSCAD" -q -Dstep=$step --imgsize 1600,1500 --view axes,scales "$@" -o "$T" /dev/null
 		else
 			TEXT="Step $step"
@@ -49,6 +50,6 @@ tut() {
 
 #img Tree		--camera 0,0,35,72,0,60,220
 #img Nessie		--camera -20,10,10,65,0,300,260
-tut TutorialPart01	--camera 0,0,0,55,0,25,100
-tut TutorialPart02	--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
-tut TutorialPart03	--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+tut TutorialPart01	"Tutorial Part 1: Introduction"			--camera 0,0,0,55,0,25,100
+tut TutorialPart02	"Tutorial Part 2: Geometric Primitives"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+tut TutorialPart03	"Tutorial Part 3: Transformations"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
