@@ -20,6 +20,11 @@ setDay(4, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart03',
         src: 'TutorialPart03.scad',
 	info: '<p>Tutorial Part 3, Transformations.</p>'
 });
+setDay(5, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart04',
+        img: 'TutorialPart04.gif',
+        src: 'TutorialPart04.scad',
+	info: '<p>Tutorial Part 4, Constructive Solid Geometry (CSG).</p>'
+});
 setDay(8, { author: 'Ulrich Bär', license: 'CC0', dir: 'Coaster',
         img: 'Coaster.png',
         src: 'Coaster.scad',

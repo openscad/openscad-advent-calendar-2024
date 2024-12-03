@@ -50,6 +50,7 @@ tut() {
 
 #img Tree		--camera 0,0,35,72,0,60,220
 #img Nessie		--camera -20,10,10,65,0,300,260
-tut TutorialPart01	"Tutorial Part 1: Introduction"			--camera 0,0,0,55,0,25,100
-tut TutorialPart02	"Tutorial Part 2: Geometric Primitives"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
-tut TutorialPart03	"Tutorial Part 3: Transformations"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+#tut TutorialPart01	"Tutorial Part 1: Introduction"			--camera 0,0,0,55,0,25,100
+#tut TutorialPart02	"Tutorial Part 2: Geometric Primitives"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+#tut TutorialPart03	"Tutorial Part 3: Transformations"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+tut TutorialPart04	"Tutorial Part 4: Constructive Solid Geometry (CSG)"	--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
