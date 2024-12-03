@@ -48,9 +48,9 @@ square(size=[30, 10], center = true);
 
 /*** STEP 3 ***/
 
-// The second 2D primitive is the circle() which can be specified by
-// radius "r=" or diameter "d=". The circle() primitive is always centered at the
-// origin in the X/Y plane.
+// The second 2D primitive is the circle() which can be specified
+// by radius "r=" or diameter "d=". The circle() primitive is always
+// centered at the origin in the X/Y plane.
 
 if (step == 3) {
 
@@ -61,9 +61,10 @@ circle(d = 30);
 /*** STEP 4 ***/
 
 // The third 2D primitive is the polygon which can generate even pretty
-// complex shapes by listing all the point of the shape. Polygons
-// are always closed, it's not needed to give an identical start and
-// end point. As this can get very complex it may help to write the points in different lines.
+// complex shapes by listing all the point of the shape. Polygons are
+// always closed, it's not needed to give an identical start and end
+// point. As this can get very complex it may help to write the points
+// in different lines.
 
 if (step == 4) {
 
@@ -116,8 +117,8 @@ cylinder(r1 = 10, r2 = 2, h = 20, center = true);
 /*** STEP 8 ***/
 
 // The fourth and last 3D primitive is the polyhedron() which is not
-// easy to define as it needs both a list of all the points and a list
-// of faces which are required to fo´llow a number of rules.
+// easy to define as it needs both a list of all the points and a
+// list of faces which are required to fo´llow a number of rules.
 // We will only show an example here but skip it for this tutorial,
 // it's complicated and powerful enough to deserve it's own tutorial.
 

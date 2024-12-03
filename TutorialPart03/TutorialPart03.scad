@@ -4,14 +4,14 @@
 
 // In part 3, we'll start moving things around.
 
-// For transforming our primitives, OpenSCAD has the 2 most basic
-// operations translate() and rotate(), there is mirror() and also
-// scale() and resize() for changing the geometry.
+// For transforming our primitives, OpenSCAD has the two most basic
+// operations translate() and rotate(), there is mirror() and also scale()
+// and resize() for changing the geometry.
 
-// We will leave mirror() for tomorrow, but there's still quite a
-// lot of operations, so lets get started.
+// We will leave mirror() for tomorrow, but there's still quite a lot
+// of operations, so lets get started.
 
-step = 1; // [1:7]
+step = 1; // [1:8]
 
 /*** STEP 1 ***/
 
@@ -61,28 +61,39 @@ translate([0, 5]) rotate(45) square(10);
 
 /*** STEP 4 ***/
 
+// Now we do the translation first and rotate after that. The result is
+// different from step 3 as expected.
+
+if (step == 4) {
+
+rotate(45) translate([0, 5]) square(10);
+
+}
+
+/*** STEP 5 ***/
+
 // Now lets step up things a bit by going into 3-dimensional space.
 
 // => Move and rotate the 3D view for a better look at where the sphere()
 // ended up.
 
-// There are also 6 buttons in the toolbar below the 3D view which make
-// the camera look straight along any of the axes in positive or negative
-// direction.
+// There are also 6 buttons in the toolbar below the 3D view which
+// make the camera look straight along any of the axes in positive or
+// negative direction.
 
 // In addition it's possible to switch between perspective and orthogonal
-// view, perspective mode is looking more realistic as things farther away
-// are shown smaller. Orthogonal view can help aligning things as things
-// are always shown in their defined size, regardless of the distance to
-// the camera.
+// view, perspective mode is looking more realistic as things farther
+// away are shown smaller. Orthogonal view can help aligning things
+// as things are always shown in their defined size, regardless of the
+// distance to the camera.
 
-if (step == 4) {
+if (step == 5) {
 
 translate([10, 10, 8]) sphere(5);
 
 }
 
-/*** STEP 5 ***/
+/*** STEP 6 ***/
 
 // Yesterday we have seen that cylinders or cones are always created in
 // the same orientation. But with rotate() we can transform a cylinder()
@@ -90,42 +101,41 @@ translate([10, 10, 8]) sphere(5);
 
 // To achieve that, we have to rotate() 90 degress around the Y axis.
 
-if (step == 5) {
+if (step == 6) {
 
 rotate([0, 90, 0]) cylinder(d = 5, h = 30, center = true);
 
 }
 
-/*** STEP 6 ***/
+/*** STEP 7 ***/
 
 // Scaling and resizing are similar but different in an important way,
 // using scale() a relative size change will be applied, giving a value
 // of 1 for an axis means the geometry is not changed in that direction.
 
-if (step == 6) {
+if (step == 7) {
 
 scale([3, 1, 0.25]) sphere(5);
 
 }
 
-/*** STEP 7 ***/
+/*** STEP 8 ***/
 
 // When using resize, the values are absolute target values, basically
 // giving the new size of the object in that axis.
 
 // The special value of 0 will leave the axis with that value unchanged.
 
-if (step == 7) {
+if (step == 8) {
 
 resize([3, 40, 0]) sphere(5);
 
 }
 
-
 /*** THE END ***/
 
-// Now that we can create primitives and move them around, it's time
-// to start combining them.
+// Now that we can create primitives and move them around, it's time to
+// start combining them.
 
 /*********************************************************************/
 
