@@ -25,10 +25,25 @@ setDay(5, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart04',
         src: 'TutorialPart04.scad',
 	info: '<p>Tutorial Part 4, Constructive Solid Geometry (CSG).</p>'
 });
+setDay(6, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart05',
+        img: 'TutorialPart05.gif',
+        src: 'TutorialPart05.scad',
+	info: '<p>Tutorial Part 5, Debugging, Mesh Resolution.</p>'
+});
+setDay(7, { author: 'Ulrich Bär', license: 'CC0', dir: 'BabyToy',
+        img: 'BabyToy.png',
+        src: 'BabyToy.scad',
+	bin: 'BabyToy.3mf'
+});
 setDay(8, { author: 'Ulrich Bär', license: 'CC0', dir: 'Coaster',
         img: 'Coaster.png',
         src: 'Coaster.scad',
 	bin: 'Coaster.3mf'
+});
+setDay(14, { author: 'Ulrich Bär', license: 'CC0', dir: 'Baubel',
+        img: 'SCADventBaubel.png',
+        src: 'SCADventBaubel.scad',
+	bin: 'SCADventBaubel.3mf'
 });
 setDay(15, { author: 'Ulrich Bär', license: 'CC0', dir: 'NightHawks',
         img: 'NightHawks.png',

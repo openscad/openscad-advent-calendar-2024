@@ -21,7 +21,11 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart04/TutorialPart04.gif" width="250">
 <p>Tutorial Part 4, Constructive Solid Geometry (CSG).</p>
 
-## 7. Baby Toy (Ulrich Bär | CC0)
+## 6. TutorialPart05 (Torsten Paul | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart05/TutorialPart05.gif" width="250">
+<p>Tutorial Part 5, Debugging, Mesh Resolution.</p>
+
+## 7. BabyToy (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/BabyToy/BabyToy.png" width="250">
 
 ## 8. Coaster (Ulrich Bär | CC0)

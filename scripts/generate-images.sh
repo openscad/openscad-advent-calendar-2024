@@ -53,4 +53,5 @@ tut() {
 #tut TutorialPart01	"Tutorial Part 1: Introduction"			--camera 0,0,0,55,0,25,100
 #tut TutorialPart02	"Tutorial Part 2: Geometric Primitives"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
 #tut TutorialPart03	"Tutorial Part 3: Transformations"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
-tut TutorialPart04	"Tutorial Part 4: Constructive Solid Geometry (CSG)"	--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
+#tut TutorialPart04	"Tutorial Part 4: Constructive Solid Geometry (CSG)"	--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
+tut TutorialPart05	"Tutorial Part 5: Debugging, Mesh Resolution"		--backend=manifold --camera 10,00,15,85,0,10,100
