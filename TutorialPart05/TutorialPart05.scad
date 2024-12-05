@@ -88,6 +88,9 @@ union() {
 // geometry, skipping all the other declared geometry even though it's
 // unchanged in the file.
 
+// Note that the ! can be given only once, as it is supposed to mark
+// the single code block to be shown and rendered.
+
 if (step == 5) {
 
 difference() {
