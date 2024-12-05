@@ -28,7 +28,7 @@ setDay(5, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart04',
 setDay(6, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart05',
         img: 'TutorialPart05.gif',
         src: 'TutorialPart05.scad',
-	info: '<p>Tutorial Part 5, Debugging, Mesh Resolution.</p>'
+	info: '<p>Tutorial Part 5, Modifiers, Mesh Resolution.</p>'
 });
 setDay(7, { author: 'Ulrich Bär', license: 'CC0', dir: 'BabyToy',
         img: 'BabyToy.png',

@@ -6,7 +6,7 @@
 // it sometimes can get difficult to see where specific geometry appears
 // in the model.
 
-step = 1; // [1:7]
+step = 1; // [1:8]
 
 /*** STEP 1 ***/
 
@@ -128,6 +128,25 @@ cube([20, 20, 1]);
 
 /*** STEP 7 ***/
 
+// The fourth and last modifier is * which acts as a structure aware
+// comment and will comment out the whole section of statements it is
+// marking. So by just adding the * infront of the difference, it will
+// remove the whole content of that code block regardless of the number
+// of lines it spans.
+
+if (step == 7) {
+
+cylinder(r = 4, h = 4);
+
+*difference() {
+	translate([0, 10, 0]) cube(10);
+	translate([5, 9, 5]) rotate([-90, 0, 0]) cylinder(r = 3, h = 12);
+}
+
+}
+
+/*** STEP 8 ***/
+
 // Another important topic when generating models is the resolution the
 // mesh will be generated with. OpenSCAD using mesh output means that
 // the output files can't represent ideal circles or spheres.
@@ -157,7 +176,7 @@ cube([20, 20, 1]);
 // the main file. Those will affect all places that do not specifically
 // override the values.
 
-if (step == 7) {
+if (step == 8) {
 
 // fixed number of segments, regardless of size
 translate([-3, 0, 5]) rotate([90, 0, 0])
