@@ -31,6 +31,10 @@ Designs for the OpenSCAD Advent Calendar 2024
 ## 8. Coaster (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Coaster/Coaster.png" width="250">
 
+## 9. TutorialPart06 (Torsten Paul | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart06/TutorialPart06.gif" width="250">
+<p>Tutorial Part 6, Math and Functions</p>
+
 ## 14. Baubel (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Baubel/SCADventBaubel.png" width="250">
 

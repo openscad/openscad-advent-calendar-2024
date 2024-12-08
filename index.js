@@ -40,6 +40,11 @@ setDay(8, { author: 'Ulrich Bär', license: 'CC0', dir: 'Coaster',
         src: 'Coaster.scad',
 	bin: 'Coaster.3mf'
 });
+setDay(9, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart06',
+        img: 'TutorialPart06.gif',
+        src: 'TutorialPart06.scad',
+	info: '<p>Tutorial Part 6, Math and Functions</p>'
+});
 setDay(14, { author: 'Ulrich Bär', license: 'CC0', dir: 'Baubel',
         img: 'SCADventBaubel.png',
         src: 'SCADventBaubel.scad',

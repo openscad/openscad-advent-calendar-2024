@@ -6,25 +6,22 @@
 // general. OpenSCAD provides quite a number of builtin math functions,
 // so we can't introduce all of them in this tutorial.
 
-// A reference of what is available as builtin, not just in regard to
-// math functions but for all areas of functionality, the GUI provides a
-// link to the cheat sheet via Help -> Cheat Sheet which opens the link
-// https://openscad.org/cheatsheet/index.html
+// As a reference of what is available as builtin, not just in regard to
+// math functions but for all areas of functionality, the GUI provides
+// a link to the cheat sheet via Help -> Cheat Sheet which opens the
+// link https://openscad.org/cheatsheet/index.html
 
-step = 1; // [1:5]
+step = 1; // [1:4]
 
 /*** STEP 1 ***/
 
-// The easiest way of displaying data is in the console window using
-// echo(), but we can also add text to the model using the text() module.
-//
-// => Use Window -> Console to make sure the console window is visible
+// => Use Window -> Console to make sure the console window is visible.
 
-// First lets assign a numeric value to a variable "a" and create a
+// First let's assign a numeric value to a variable "a" and create a
 // second variable "b" calculated based on "a". We'll show this in both
 // the console window and the 3D View.
 
-// Normal variables in OpenSCAD just have normal names, no special
+// Normal variables in OpenSCAD just have normal names; no special
 // character is used to mark them. This is different from the special
 // variables like $fa we have seen earlier.
 
@@ -33,20 +30,23 @@ step = 1; // [1:5]
 // of a script). For a later evaluation it can be changed, but it can
 // not have multiple values for a single evaluation.
 
+// The easiest way of displaying data is in the console window using
+// echo(), but we can also add text to the model using the text() module.
+
 if (step == 1) {
 
 a = 9;
 b = 9 * 4 / 3;
 
-// This outputs "ECHO: 3, 6" to the console window
+// This outputs "ECHO: 3, 6" to the console window.
 echo(a, b);
 
-// This adds the names to the output too
+// This adds the names to the output.
 echo(variable_a = a, variable_b = b);
 
 // The text() module can't output numbers, only strings, so we use the
 // str() function that converts the number value in our variable a to
-// a string
+// a string.
 text(str(a));
 
 translate([0, -20]) text(str(b));
@@ -55,7 +55,30 @@ translate([0, -20]) text(str(b));
 
 /*** STEP 2 ***/
 
-// Now lets use some math to generate a pentagon. Looking at a regular
+// Functions make it possible to write an expression once with a number
+// of parameters and evaluate them multiple times later by calling them
+// with values for the parameters. The result can be assigned to variables
+// or directly used as parameters for other function or for modules.
+
+function func(x) = 2 * x / 3;
+
+function calculate_size(x) = [ x, func(x) ];
+
+if (step == 2) {
+
+x = 25;
+y = func(x);
+translate([0, -12]) square([x, y], center = true);
+
+translate([0, 12]) square([15, func(15)], center = true);
+
+translate([0, 30]) square(calculate_size(8), center = true);
+
+}
+
+/*** STEP 3 ***/
+
+// Now let's use some math to generate a pentagon. Looking at a regular
 // pentagon as explained in https://en.wikipedia.org/wiki/Pentagon we
 // need 5 points on a circle separated by 72 degrees.
 
@@ -63,9 +86,9 @@ translate([0, -20]) text(str(b));
 // angle. Using the builtin functions sin() and cos() we can calculate
 // the X/Y coordinates of the associated point on a circle.
 
-function circle_point(r, a) = r * [-sin(a), cos(a) ];
+function circle_point(r, a) = r * [ cos(a), sin(a) ];
 
-if (step == 2) {
+if (step == 3) {
 
 polygon([
 	circle_point(15, 0),
@@ -77,36 +100,24 @@ polygon([
 
 }
 
-/*** STEP 3 ***/
+/*** STEP 4 ***/
 
-// Functions can be recursive, one of the simplest recursive functions
+// Functions can be recursive. One of the simplest recursive functions
 // is the Factorial - https://en.wikipedia.org/wiki/Factorial
 
 // We have a defined result of 1 for a value of 0, the result
-// for all other (positive) values is defined of the value
-// itself multiplied with the result of the previous value In
-// OpenSCAD, we can write this condition using the so called ternary
-// conditional operator which is common to many programming languages
+// for all other (positive) values is defined of the value itself
+// multiplied with the result of the previous value In OpenSCAD,
+// we can write this condition using the ternary conditional
+// operator which is common to many programming languages
 // https://en.wikipedia.org/wiki/Ternary_conditional_operator
 
 function factorial(v) = v <= 0 ? 1 : v * factorial(v - 1);
 
-if (step == 3) {
+if (step == 4) {
 
 v = 7;
 text(str(v, "! = ", factorial(v)), halign="center");
-
-}
-
-/*** STEP 4 ***/
-
-if (step == 4) {
-
-}
-
-/*** STEP 5 ***/
-
-if (step == 5) {
 
 }
 
