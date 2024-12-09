@@ -46,7 +46,7 @@ setDay(9, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart06',
 	info: '<p>Tutorial Part 6, Math and Functions</p>'
 });
 setDay(10, { author: 'Ryan A. Colyer', license: 'CC0', dir: 'TutorialPart07',
-        img: 'TutorialPart07.webp',
+        img: 'TutorialPart07.gif',
         src: 'TutorialPart07.scad',
 	info: '<p>Tutorial Part 7, Mathematical Shape Outlines</p>'
 });

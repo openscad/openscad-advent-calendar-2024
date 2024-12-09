@@ -36,7 +36,7 @@ Designs for the OpenSCAD Advent Calendar 2024
 <p>Tutorial Part 6, Math and Functions</p>
 
 ## 10. TutorialPart07 (Ryan A. Colyer | CC0)
-<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart07/TutorialPart07.webp" width="250">
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart07/TutorialPart07.gif" width="250">
 <p>Tutorial Part 7, Mathematical Shape Outlines</p>
 
 ## 14. Baubel (Ulrich Bär | CC0)
