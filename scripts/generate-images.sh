@@ -56,4 +56,6 @@ tut() {
 #tut TutorialPart04	"Tutorial Part 4: Constructive Solid Geometry (CSG)"	--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
 #tut TutorialPart05	"Tutorial Part 5: Modifiers, Mesh Resolution"		--backend=manifold --camera 10,00,15,85,0,10,100
 #tut TutorialPart06	"Tutorial Part 6: Math and Functions"			--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
-tut TutorialPart07	"Tutorial Part 7: Mathematical Shape Outlines"		--render=solid --backend=manifold --camera 0,5,20,55,0,25,140
+#tut TutorialPart07	"Tutorial Part 7: Mathematical Shape Outlines"		--render=solid --backend=manifold --camera 0,5,20,55,0,25,140
+#tut TutorialPart08	"Tutorial Part 8: Extrusion"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,140
+tut TutorialPart09	"Tutorial Part 9: Modules"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,400

@@ -39,6 +39,14 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart07/TutorialPart07.gif" width="250">
 <p>Tutorial Part 7, Mathematical Shape Outlines</p>
 
+## 11. TutorialPart08 (Torsten Paul | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart08/TutorialPart08.gif" width="250">
+<p>Tutorial Part 8, Extrusion</p>
+
+## 12. TutorialPart09 (Torsten Paul | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart09/TutorialPart09.gif" width="250">
+<p>Tutorial Part 9, Modules</p>
+
 ## 14. Baubel (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Baubel/SCADventBaubel.png" width="250">
 

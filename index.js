@@ -50,6 +50,16 @@ setDay(10, { author: 'Ryan A. Colyer', license: 'CC0', dir: 'TutorialPart07',
         src: 'TutorialPart07.scad',
 	info: '<p>Tutorial Part 7, Mathematical Shape Outlines</p>'
 });
+setDay(11, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart08',
+        img: 'TutorialPart08.gif',
+        src: 'TutorialPart08.scad',
+	info: '<p>Tutorial Part 8, Extrusion</p>'
+});
+setDay(12, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart09',
+        img: 'TutorialPart09.gif',
+        src: 'TutorialPart09.scad',
+	info: '<p>Tutorial Part 9, Modules</p>'
+});
 setDay(14, { author: 'Ulrich Bär', license: 'CC0', dir: 'Baubel',
         img: 'SCADventBaubel.png',
         src: 'SCADventBaubel.scad',
