@@ -60,6 +60,11 @@ setDay(12, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart09',
         src: 'TutorialPart09.scad',
 	info: '<p>Tutorial Part 9, Modules</p>'
 });
+setDay(13, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart10',
+        img: 'TutorialPart10.gif',
+        src: 'TutorialPart10.scad',
+	info: '<p>Tutorial Part 10, Putting things together</p>'
+});
 setDay(14, { author: 'Ulrich Bär', license: 'CC0', dir: 'Baubel',
         img: 'SCADventBaubel.png',
         src: 'SCADventBaubel.scad',

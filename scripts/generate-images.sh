@@ -58,4 +58,5 @@ tut() {
 #tut TutorialPart06	"Tutorial Part 6: Math and Functions"			--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
 #tut TutorialPart07	"Tutorial Part 7: Mathematical Shape Outlines"		--render=solid --backend=manifold --camera 0,5,20,55,0,25,140
 #tut TutorialPart08	"Tutorial Part 8: Extrusion"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,140
-tut TutorialPart09	"Tutorial Part 9: Modules"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,400
+#tut TutorialPart09	"Tutorial Part 9: Modules"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,400
+tut TutorialPart10	"Tutorial Part 10: Putting things together"		--backend=manifold --camera 0,0,10,55,0,25,400
