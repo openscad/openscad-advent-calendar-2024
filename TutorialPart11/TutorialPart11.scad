@@ -27,7 +27,9 @@ if (step==1){
 // first we place the objects
 
 if (step==2)
-  color("lightslateGrey")union(){
+   color("lightslateGrey")Circles();
+
+module Circles(){
      translate([radius,radius])circle(radius);
      translate([size.x, 0] + [-radius,radius])circle(radius);
      translate([0, size.y] + [radius,-radius])circle(radius);
@@ -40,12 +42,8 @@ if (step==2)
  /*** STEP 3 ***/ 
  // and now put the hull() around
 if (step==3)
-   color("slateGrey")hull(){
-     translate([radius,radius])circle(radius);
-     translate([size.x, 0] + [-radius,radius])circle(radius);
-     translate([0, size.y] + [radius,-radius])circle(radius);
-     translate(size - [radius,radius])circle(radius);
-   }
+   color("slateGrey")hull()Circles();
+
 
 
 
