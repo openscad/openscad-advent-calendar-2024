@@ -63,36 +63,17 @@ module candle_holder(n, r, h = 10) {
 	color("PapayaWhip")
 	difference() {
 		union() {
-			rotate_extrude() hull(){
-				translate([10*r - wall/2,wall/2])circle(d=wall);
-				translate([6*r + wall/2, wall/2])circle(d=wall);
+			// Changing to the rotate_extrude() gives the base
+			// rounded sides while not making it more difficult
+			// to 3d-print.
+			rotate_extrude() hull() {
+				translate([10 * r - wall / 2, wall/ 2]) circle(d = wall);
+				translate([ 6 * r + wall / 2, wall/ 2]) circle(d = wall);
 			}
 			candle_pos(n, r)
 				cylinder(r = r + wall, h = h);
 		}
 		translate([0,0, wall/2])candle_pos(n, r)
-			cylinder(r = r, h = h);
-	}
-	// Place the candles passed as child module but mark for preview
-	// only, so on render (F6) the candles are not included.
-	%candle_pos(n, r, h)
-		children();
-}
-
-module candle_holderORG(n, r, h = 10) {
-	wall = 2; // fixed wall thickness
-
-	color("PapayaWhip")
-	difference() {
-		union() {
-			linear_extrude(wall) difference() {
-				circle(10 * r);
-				circle(6 * r);
-			}
-			candle_pos(n, r)
-				cylinder(r = r + wall, h = h);
-		}
-		candle_pos(n, r)
 			cylinder(r = r, h = h);
 	}
 	// Place the candles passed as child module but mark for preview
@@ -139,4 +120,4 @@ candle_holder(n, candle_r) candle(candle_r, candle_h = 10);
 // Dedication along with this software.
 // If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-$fa = 2; $fs = 0.5;
+$fa = 2; $fs = 0.2;
