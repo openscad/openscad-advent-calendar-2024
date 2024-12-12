@@ -136,7 +136,7 @@ linear_extrude(20, scale = [0.2, 0.8])
 if (step == 7) {
 	
 linear_extrude(20, twist = 90)
-	square([12, 5´], center = true);
+	square([12, 5], center = true);
 
 }
 
