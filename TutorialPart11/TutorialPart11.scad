@@ -23,8 +23,8 @@ if (step==1){
 }
 
 /*** STEP 2 ***/
-// Another way is to construct it from parts
-// first we place the objects
+// Another way is to construct it from parts.
+// First we place the corner circles.
 
 
 module Circles(){
