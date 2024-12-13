@@ -26,9 +26,16 @@ if (step==1){
 // Another way is to use a hull() which will encase the objects
 // first we place the objects
 
-if (step==2)
+if (step==2){
    color("lightslateGrey")Circles();
 
+// and sure we could fill the space with two squares
+ # union(){
+   translate([radius,0])square([size.x-radius*2,size.y]);
+   translate([0,radius])square([size.x,size.y-radius*2]);
+ }
+
+}
 module Circles(){
      translate([radius,radius])circle(radius);
      translate([size.x, 0] + [-radius,radius])circle(radius);
@@ -40,7 +47,7 @@ module Circles(){
 
 
  /*** STEP 3 ***/ 
- // and now put the hull() around
+ // Or more elegant put the hull() around
 if (step==3)
    color("slateGrey")hull()Circles();
 
