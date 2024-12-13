@@ -58,7 +58,7 @@ if (step==4)
 
 
  /*** STEP 5 ***/
-// Or we can apply an offset() which adds to a 2D object.
+// Or we can apply an offset() which adds to a 2D object while the r parameter adds an arc to each corner by expanding.
 if (step==5)color("lavender")
   translate(radius*[1,1])
     offset(radius)
@@ -69,7 +69,7 @@ if (step==5)color("lavender")
 
 
  /*** STEP 6 ***/
-// As the offset() can be negative too we can shorten this by using it twice
+// As the offset() can be negative too we can shorten this by using it twice to shrink and then expand the square.
 
 if (step==6)color("maroon")
   offset(radius)offset(-radius)square(size);
@@ -78,8 +78,9 @@ if (step==6)color("maroon")
 
 // Then we can create a polygon, which is a bit more complex, first we create a function to make an arc with parameter to rotate and translate. And a resolution fn
 
-function arc(r,deg=90,rot=0,t=[0,0],fn=10)= [ for (i=[0:fn])
-  [cos(deg/fn*i + rot),sin(deg/fn*i + rot)]*r + t
+function arc(r,deg=90,rot=0,t=[0,0],fn=10)= [
+  for (i=[0:fn])
+    [cos(deg/fn*i + rot),sin(deg/fn*i + rot)]*r + t
 ];
 
 if(step==7){
