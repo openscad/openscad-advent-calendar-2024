@@ -23,15 +23,15 @@ if (step==1){
 }
 
 /*** STEP 2 ***/
-// Another way is to construct it from parts.
+// Another way is to construct it from parts. With the advantage to use different radii for each corner.
 // First we place the corner circles.
 
 
-module Circles(){
-     translate([radius,radius])circle(radius);
-     translate([size.x, 0] + [-radius,radius])circle(radius);
-     translate([0, size.y] + [radius,-radius])circle(radius);
-     translate(size - [radius,radius])circle(radius);
+module Circles(radius=[1,1,1,1]*radius, size=size){
+     translate([radius[0],radius[0]])circle(radius[0]);
+     translate([size.x, 0] + [-radius[1],radius[1]])circle(radius[1]);
+     translate([0, size.y] + [radius[2],-radius[2]])circle(radius[2]);
+     translate(size - [radius[3],radius[3]])circle(radius[3]);
  }
 
 if (step==2){
