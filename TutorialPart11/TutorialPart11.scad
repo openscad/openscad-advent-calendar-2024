@@ -52,7 +52,7 @@ if (step==2){
  /*** STEP 3 ***/ 
  // Or more elegant put the hull() around which will encase the objects
 if (step==3)
-   color("slateGrey")hull()Circles();
+   color("slateGrey")hull()Circles(radius=[radius,radius,radius/2,radius/3]);
 
 
 
