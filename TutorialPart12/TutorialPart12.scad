@@ -37,11 +37,11 @@ for (i=[0,1,5,8,10]) translate ([i,0]) cube();
 }
 
 /*** STEP 4 ***/
-// Now let us make this a bit more interessting
+// Now let us make this a bit more interessting, we rotate the element. Keep in mind that 0 and 360 is the same position so we just need the step before (360-5) else we get one element twice.
 
 if (step==4){
 
-for (rot=[0:5:360]) rotate([0,rot,0])translate ([10,0]) cylinder(h=1,d=10,$fn=3,center=true);
+for (rot=[0:5:355]) rotate([0,rot,0])translate ([10,0]) cylinder(h=1,d=10,$fn=3,center=true);
 
 }
 
@@ -51,7 +51,7 @@ for (rot=[0:5:360]) rotate([0,rot,0])translate ([10,0]) cylinder(h=1,d=10,$fn=3,
 
 if (step==5){
 increment=5;
-for (rot=[0:increment:360])hull(){
+for (rot=[0:increment:360-increment])hull(){
   rotate([0,rot,0])translate ([10,0]) cylinder(h=1,d=10,$fn=3,center=true);
   rotate([0,rot+increment,0])translate ([10,0]) cylinder(h=1,d=10,$fn=3,center=true);
   }
@@ -67,7 +67,7 @@ for (rot=[0:increment:360])hull(){
 
 if (step==6){
 increment=5;
-for (i=[0:increment:360])hull(){
+for (i=[0:increment:360-increment])hull(){
  j=i+increment;
   rotate([0,i,0])translate ([10,0]) linear_extrude(.1,scale=0.1)offset(2)circle(5-2,$fn=3);
   rotate([0,j,0])translate ([10,0]) linear_extrude(.1,scale=0.1)offset(2)circle(5-2,$fn=3);
@@ -81,7 +81,7 @@ for (i=[0:increment:360])hull(){
 if (step==7){
 increment=1;
 twist=360*3;
-for (i=[0:increment:360])color([abs(sin(i)),abs(cos(i)),0.2])hull(){
+for (i=[0:increment:360-increment])color([abs(sin(i)),abs(cos(i)),0.2])hull(){
  j=i+increment;
   for(h=[i,j])rotate([0,h,0])translate ([10,0])rotate(h/360*twist) linear_extrude(.1,scale=0.1)offset(2)circle(5-2,$fn=3);
   }
