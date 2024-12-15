@@ -6,7 +6,7 @@
 
 
 
-step = 1; // [1:7]
+step = 1; // [1:8]
 
 /*** STEP 1 ***/
 // First we understand a FOR loop that is creating instances for each count
@@ -62,6 +62,10 @@ for (rot=[0:increment:360-increment])hull(){
 // While rot = 0 the second is at 5, when rot = 5 the second is 10 and so on
 // this gives us a hull sequence or chain hull 
 
+
+
+
+
 /*** STEP 6 ***/
 // As our cylinder has some height this will leave some small imperfections but we can improve that so only the base edges are in contact. Also we using an own parameter for the second hull object. And using an offset to round it.
 
@@ -75,11 +79,15 @@ for (i=[0:increment:360-increment])hull(){
 
 }
 
+
+
+
+
 /*** STEP 7 ***/
 // Finally we intruduce another rotation (twist) also we replace the two hull objects with a loop that instantiate both. And add some color
 
 if (step==7){
-increment=1;
+increment=5;
 twist=360*3;
 for (i=[0:increment:360-increment])color([abs(sin(i)),abs(cos(i)),0.2])hull(){
  j=i+increment;
@@ -87,6 +95,37 @@ for (i=[0:increment:360-increment])color([abs(sin(i)),abs(cos(i)),0.2])hull(){
   }
 
 }
+
+
+
+
+
+/*** STEP 8 ***/
+// As the hull() is always a convex hull, we need to work around that if we want a concave profile. The color of the negative part is shifted
+
+if (step==8){
+increment=3;
+twist=240;
+
+difference(){
+    union()for (i=[0:increment:360-increment])color([abs(sin(i)),abs(cos(i)),0.2]) hull(){
+      j=i+increment;
+      for(h=[i,j])rotate([0,h,0])translate ([10,0])rotate(h/360*twist)
+          linear_extrude(.1,scale=0.1)offset(2)circle(5-2,$fn=3);
+     }
+  //negative  part 3× (rot)
+     for (i=[0:increment:360-increment],rot=[60,180,300])
+      color([abs(cos(i)),0,abs(sin(i))]) hull(){
+      j=i+increment;
+        for(h=[i,j])rotate([0,h,0])translate([10,0])rotate(h/360*twist)
+          rotate(rot)translate([5,0])linear_extrude(.1,scale=0.1)circle(3,$fn=24);
+      }
+}
+    
+    
+}
+
+
 
 
 /*** THE END ***/
