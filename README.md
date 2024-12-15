@@ -57,6 +57,12 @@ Designs for the OpenSCAD Advent Calendar 2024
 ## 15. NightHawks (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/NightHawks/NightHawks.png" width="250">
 
+## 16. TutorialPart11 (Ulrich Bär | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart11/TutorialPart11.gif" width="250">
+
+## 17. TutorialPart11 (Ulrich Bär | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart12/TutorialPart12.png" width="250">
+
 ## 22. Nessie (Jordan Brown | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Nessie/Nessie.png" width="250">
 <p>Real, maybe.</p>
