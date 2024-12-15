@@ -74,6 +74,11 @@ setDay(15, { author: 'Ulrich Bär', license: 'CC0', dir: 'NightHawks',
         img: 'NightHawks.png',
         src: 'NightHawks.scad'
 });
+setDay(16, { author: 'Ulrich Bär', license: 'CC0', dir: 'TutorialPart11',
+        img: 'TutorialPart11.gif',
+        src: 'TutorialPart11.scad',
+	info: '<p>Tutorial Part 11, Many ways lead to rounded rectangles in OpenSCAD, we look at 7 of them.</p>'
+});
 setDay(22, { author: 'Jordan Brown', license: 'CC0', dir: 'Nessie',
         img: 'Nessie.png',
         src: 'Nessie.scad',

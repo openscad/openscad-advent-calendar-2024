@@ -43,6 +43,8 @@ tut() {
 	MORPHFRAMES=19
 	echo -n "animate "
 	convert \( "$N".????.png \) \( -clone 0 \) -loop 0 -morph $MORPHFRAMES -delete -1 -set delay "%[fx:(t%($MORPHFRAMES+1)==0)?$DELAY:$MORPHDELAY]" -layers Optimize "$N.gif"
+	echo -n "mp4 "
+	ffmpeg -y -v 0 -i "$N.gif" -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" "$N.mp4"
 	rm -f "$N".*.png
 	echo "done."
 )
@@ -59,4 +61,5 @@ tut() {
 #tut TutorialPart07	"Tutorial Part 7: Mathematical Shape Outlines"		--render=solid --backend=manifold --camera 0,5,20,55,0,25,140
 #tut TutorialPart08	"Tutorial Part 8: Extrusion"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,140
 #tut TutorialPart09	"Tutorial Part 9: Modules"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,400
-tut TutorialPart10	"Tutorial Part 10: Putting things together"		--backend=manifold --camera 0,0,10,55,0,25,400
+#tut TutorialPart10	"Tutorial Part 10: Putting things together"		--backend=manifold --camera 0,0,10,55,0,25,400
+tut TutorialPart11	"Tutorial Part 11: Rounded Rectangles, lots of them!"	--render=solid --backend=manifold --camera 15,10,10,40,0,25,140

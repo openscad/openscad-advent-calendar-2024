@@ -59,10 +59,7 @@ Designs for the OpenSCAD Advent Calendar 2024
 
 ## 16. TutorialPart11 (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart11/TutorialPart11.gif" width="250">
-
-## 17. TutorialPart12 (Ulrich Bär | CC0)
-<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart12/TutorialPart12.png" width="250">
-<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart12/TutorialPart12-8.png" width="250">
+<p>Tutorial Part 11, Many ways lead to rounded rectangles in OpenSCAD, we look at 7 of them.</p>
 
 ## 22. Nessie (Jordan Brown | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Nessie/Nessie.png" width="250">
