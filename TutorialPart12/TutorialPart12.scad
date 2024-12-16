@@ -1,5 +1,5 @@
 /*
- * Welcome to the Advent Calendar - Tutorial Edition - Part 11
+ * Welcome to the Advent Calendar - Tutorial Edition - Part 12
  */
  
  // We will have a look how to create Objects by using a loop
