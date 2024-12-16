@@ -77,12 +77,22 @@ setDay(15, { author: 'Ulrich Bär', license: 'CC0', dir: 'NightHawks',
 setDay(16, { author: 'Ulrich Bär', license: 'CC0', dir: 'TutorialPart11',
         img: 'TutorialPart11.gif',
         src: 'TutorialPart11.scad',
-	info: '<p>Tutorial Part 11, Many ways lead to rounded rectangles in OpenSCAD, we look at 7 of them</p>'
+	info: '<p>Tutorial Part 11, Many ways lead to rounded rectangles in OpenSCAD, we look at 7 of them.</p>'
+});
+setDay(17, { author: 'Ulrich Bär', license: 'CC0', dir: 'TutorialPart12',
+        img: 'TutorialPart12.gif',
+        src: 'TutorialPart12.scad',
+	info: '<p>Tutorial Part 12, Loops and chain hulls</p>'
 });
 setDay(18, { author: 'Ryan A. Colyer', license: 'CC0', dir: 'TutorialPart13',
         img: 'TutorialPart13.gif',
         src: 'TutorialPart13.scad',
-	info: '<p>Tutorial Part 13, Recursive modules to create random fractal snowflakes</p>'
+	info: '<p>Tutorial Part 13, Recursive modules to create random fractal snowflakes.</p>'
+});
+setDay(19, { author: 'Ulrich Bär', license: 'CC0', dir: 'TutorialPart14',
+        img: 'TutorialPart14.gif',
+        src: 'TutorialPart14.scad',
+	info: '<p>Tutorial Part 14, Polygons and Polyhedrons.</p>'
 });
 setDay(22, { author: 'Jordan Brown', license: 'CC0', dir: 'Nessie',
         img: 'Nessie.png',
