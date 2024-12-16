@@ -2,7 +2,7 @@
  * Welcome to the Advent Calendar - Tutorial Edition - Part 13
  */
 
-step = 7; // [1:7]
+step = 1; // [1:7]
 
 /*** STEP 1 ***/
 
