@@ -61,6 +61,10 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart11/TutorialPart11.gif" width="250">
 <p>Tutorial Part 11, Many ways lead to rounded rectangles in OpenSCAD, we look at 7 of them.</p>
 
+## 18. TutorialPart13 (Ryan A. Colyer | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart13/TutorialPart13.gif" width="250">
+<p>Tutorial Part 13, Recursive modules to create random fractal snowflakes.</p>
+
 ## 22. Nessie (Jordan Brown | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Nessie/Nessie.png" width="250">
 <p>Real, maybe.</p>
