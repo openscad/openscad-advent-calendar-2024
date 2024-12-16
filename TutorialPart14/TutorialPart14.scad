@@ -151,14 +151,14 @@ for(i=[0:loop])[(i+1)%(tips*2),i,i+ tips*2 ,(i +1)%(tips*2) + tips*2]// sides cr
 
 /*** STEP 8 ***/
 // ok that was something we could do with a linear_extrude, too
-// Let's add a 3rd level that is smaller and lower
+// Let's change the radii of the base and add a 3rd level that is smaller and lower
 
 if (step==8){
 tips=5;
 loop=tips*2-1; // the length or number points of a star3D
 
 points=[
-each star3D(r= [10,5],z=0,tips=tips),// base
+each star3D(r= [15,9],z=0,tips=tips),// base
 each star3D(r= [10,5],z=5,tips=tips), // 2nd level
 each star3D(r= [1,3],z=2,tips=tips) // 3rd level
 ];
