@@ -19,6 +19,7 @@ let(chg=360/fn)
 ];
 
 if (step==1){
+echo(points());
 polygon(points());
 }
 
@@ -28,6 +29,7 @@ polygon(points());
 if (step==2){
 p2=concat(points(r=10),points(r=5));
 
+echo(p2);
 
 translate([0,20])polygon(p2);
 polygon(points=p2,paths=[[for(i=[0:9])i],[for(i=[10:19])i] ]);
@@ -35,7 +37,7 @@ polygon(points=p2,paths=[[for(i=[0:9])i],[for(i=[10:19])i] ]);
 }
 
 /*** STEP 3 ***/
-//We now use modulo to change every second point
+//We now use modulo to change every second point.  i%2, the remainder of i divided by 2, is 0 (false) for even numbers, and 1 (true) for odd numbers.
 
 function star(r=[10,5],tips=4) = [
 let(chg=360/(tips*2))
