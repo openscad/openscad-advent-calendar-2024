@@ -52,28 +52,30 @@ for (tips=[4:8]) translate([(tips-4)*20-40,20]) polygon (star(r=[5,8],tips=tips)
 
 /*** STEP 4 ***/
 //To build a polyhedron we need points and faces, faces are similar to the paths in polygons
-// But now we group them to form a triangle or connect points in a plane.
+// But now we group them to form a triangle or connect multiple points in a plane.
 // And we are now in 3D so we need Z
-// Keep in mind these are One face and not valid closed polyhedrons.
+// Keep in mind these example are just One face and not valid closed polyhedrons.
 
 // lets make a short example.
 
 // we can see every point in p has 3 values [x,y,z]
-  // while the faces is just one face that covers the shape. 
-  //If you now press F12 (thrown together) you see the face has a purple and white side while  F10 is the normal (surface) view.
-  // This is very importand as purple is the inside of a polyhedron and determined by the order of the points.
+// while the faces is just one face that covers the shape by using all surounding point indices.
+// The point indices is the list position of a point starting with 0 for the first point.
+// If you now press F12 (thrown together) you see the face has a purple and white side while  F10 is the normal (surface) view.
+// This is very importand as purple is the inside of a polyhedron and determined by the order of the points.
 
 if (step==4){
  p=[ [0,0,0], [10,0,0], [0,10,0] ];
 
 polyhedron(p,faces=[[0,1,2]]); 
 translate([0,0,10])polyhedron(p,faces=[[2,1,0]]); 
-// these are two invalid one face polygons
+// these are two invalid one face polygons - but you can see how it starts to form an object if all faces are in one polyhedron.
 
 }
 
 /*** STEP 5 ***/
-//lets make a valid polyhedron, you may notice that you can change the values of each point without the need to change the faces.
+//lets make a valid polyhedron by define all 5 sides of our prism,
+// you may notice that you can change the values of each point after without the need to change the faces.
 
 function p(z=0) = [ [0,0,z], [10,0,z], [0,10,z] ];
 if (step==5){
@@ -97,7 +99,7 @@ color ("tan") polyhedron(points,faces);
 }
 
 /*** STEP 6 ***/
-// lets use the same faces with one changed point
+// lets use the same faces but with one changed point
 
 if (step==6){
 
@@ -121,7 +123,13 @@ color("cadetBlue")polyhedron(points,faces);
 
 
 /*** STEP 7 ***/
-// remember our Star - lets use that to go 3D, we add a Z variable
+// remember our Star - lets use that to go 3D, we add a Z variable.
+// We will now use a for loop to create all sides as the face generation is following a pattern
+// the bottom and top are just all points indices listed
+// the sides consist of 4 points counter clockwise, so when the i counter start with 0
+// the point indices are [1,0,10,11]  10 and 11 are from the upper star when using 5 tips so each star is generated with 9 points which is our loop parameter.
+// for the next point i=1 will be [i+1, i, i+tips*2,i+tips*2+1] or 1+1 =2, 1 , 1+5*2=11 ,1+5*2+1=12] so that is [2,1,11,12]
+// you also could make a 5 tip star with 10 points so the last point is the same as the first - which would change how you generate the faces
 
 
 function star3D(r=[10,5],tips=4,z=0) = [
