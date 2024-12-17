@@ -24,7 +24,7 @@ polygon(points());
 }
 
 /*** STEP 2 ***/
-//When having multiple shapes within one polygon we need to define the path that groups the points and orders them. It is just a list of the point number.
+// When having multiple shapes within one polygon we need to define the path that groups the points and orders them. It is just a list of the point number.
 
 if (step==2){
 p2=concat(points(r=10),points(r=5));
@@ -37,7 +37,7 @@ polygon(points=p2,paths=[[for(i=[0:9])i],[for(i=[10:19])i] ]);
 }
 
 /*** STEP 3 ***/
-//We now use modulo to change every second point.  i%2, the remainder of i divided by 2, is 0 (false) for even numbers, and 1 (true) for odd numbers.
+// We now use modulo to change every second point.  i%2, the remainder of i divided by 2, is 0 (false) for even numbers, and 1 (true) for odd numbers.
 
 function star(r=[10,5],tips=4) = [
 let(chg=360/(tips*2))
@@ -51,16 +51,17 @@ for (tips=[4:8]) translate([(tips-4)*20-40,20]) polygon (star(r=[5,8],tips=tips)
 }
 
 /*** STEP 4 ***/
-//To build a polyhedron we need points and faces, faces are similar to the paths in polygons
+// To build a polyhedron we need points and faces, faces are similar to the paths in polygons
 // But now we group them to form a triangle or connect multiple points in a plane.
-// And we are now in 3D so we need Z
+// And we are now in 3D so we need Z.
 // Keep in mind these example are just One face and not valid closed polyhedrons.
 
-// lets make a short example.
+// Let's make a short example.
 
-// we can see every point in p has 3 values [x,y,z]
+// We can see every point in p has 3 values [x,y,z]
 // while the faces is just one face that covers the shape by using all surounding point indices.
-// The point indices is the list position of a point starting with 0 for the first point.
+// The point index is the list position of a point starting with 0 for the first point.
+// E.g.  p=[[0,0,0],[1,1,1],[2,2,2]];  then p[0]=[0,0,0] so the face [0,1,2] is using the 3 points in that order to make a face [p[0],p[1],p[2]].
 // If you now press F12 (thrown together) you see the face has a purple and white side while  F10 is the normal (surface) view.
 // This is very importand as purple is the inside of a polyhedron and determined by the order of the points.
 
@@ -69,13 +70,14 @@ if (step==4){
 
 polyhedron(p,faces=[[0,1,2]]); 
 translate([0,0,10])polyhedron(p,faces=[[2,1,0]]); 
-// these are two invalid one face polygons - but you can see how it starts to form an object if all faces are in one polyhedron.
+// ‼ these are two invalid one face polygons - but you can see how it starts to form an object if all faces are in one polyhedron.
 
 }
 
 /*** STEP 5 ***/
-//lets make a valid polyhedron by define all 5 sides of our prism,
+// Let's make a valid polyhedron by define all 5 sides of our prism,
 // you may notice that you can change the values of each point after without the need to change the faces.
+// We now use the 6 points multiple times in different faces - but we could also define points for each face.
 
 function p(z=0) = [ [0,0,z], [10,0,z], [0,10,z] ];
 if (step==5){
