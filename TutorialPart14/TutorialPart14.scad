@@ -162,8 +162,8 @@ for(i=[0:loop])[(i+1)%(tips*2),i,i+ tips*2 ,(i +1)%(tips*2) + tips*2]// sides cr
 }
 
 /*** STEP 8 ***/
-// ok that was something we could do with a linear_extrude, too
-// Let's change the radii of the base and add a 3rd level that is smaller and lower
+// Ok that was something we could do with a linear_extrude and a polygon, too
+// Let's now change the radii of the base and add a 3rd level that is smaller and lower
 // You may notice that our quad faces are now broken into 2 triangles because they are not in a plane anymore.
 // And the internal correction of openSCAD is at work here.
 
