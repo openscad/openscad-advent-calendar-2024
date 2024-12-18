@@ -34,7 +34,7 @@ if(!rec){
 }
 
 
-$vpd=1900+sin($t*180)*150;
+$vpd=1900+sin($t*180)*50;
 
-rotate([1,1,1]*sin($t*180)*30)Star(rec=3);
+rotate([1,1,1]*sin($t*180)*10)Star(rec=3);
 color("midnightBlue")sphere(3000,$fa=1);
