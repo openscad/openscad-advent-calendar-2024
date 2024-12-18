@@ -27,8 +27,10 @@ if(rec<3)color([1,0.95,0.2]-[1,1,0]*rec/4)
   }
 
 if(!rec){
-  ran=floor(rands(0,4,1)[0]);
-  color(ran==0?"midnightBlue":ran==1?"Azure":ran==2?"Red":"Lime")translate(end)sphere(d=floor(rands(0,2,1)[0])?d*2:d);
+  
+  col=["midnightBlue","Azure","Red","Lime"];
+  ran=floor(rands(0,len(col)-.0001,1)[0]);
+  color(col[ran])translate(end)sphere(d=floor(rands(0,2,1)[0])?d*2:d);
  }
 
 }
