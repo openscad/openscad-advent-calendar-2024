@@ -197,6 +197,16 @@ if (step == 7) {
   }
 }
 
+// Suggestions:  Try playing around.  If you compare these snowflakes
+// to macro photos of real snowflakes, you'll notice these have more
+// spiral asymmetry than real ones.  A next-step fix to account for
+// this would have a covarying random variation on the side branches,
+// plus a smaller separately varying asymmetry.  Perhaps think about
+// how to modify this approach to add this property in!
+//
+// Then think about the numerous other things you could try making with
+// recursive modules, and have fun!
+
 /*** THE END ***/
 
 /*********************************************************************/
