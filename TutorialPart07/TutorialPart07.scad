@@ -94,7 +94,7 @@ if (step == 4) {
 /*** STEP 5 ***/
 
 // Now we should probably light our candle.  Let's get rid of the
-// rest of the mode, and just focus on making a flame.  We can try to
+// rest of the model, and just focus on making a flame.  We can try to
 // repeat the same trick, but if we imagine a flame, from the top down,
 // it has a bigger turnaround from getting bigger to shrinking again.
 // So let's maybe try x^2 minus x^4 this time.
