@@ -73,6 +73,10 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart14/TutorialPart14.gif" width="250">
 <p>Tutorial Part 14, Polygons and Polyhedrons.</p>
 
+## 21. Star (Ulrich Bär | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Star/Star.gif" width="250">
+<p>Happy Solstice - A recursive fractal star is born.</p>
+
 ## 22. Nessie (Jordan Brown | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Nessie/Nessie.png" width="250">
 <p>Real, maybe.</p>

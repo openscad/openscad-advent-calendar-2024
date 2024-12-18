@@ -52,9 +52,9 @@ tut() {
 
 #img Tree		--camera 0,0,35,72,0,60,220
 #img Nessie		--camera -20,10,10,65,0,300,260
-#tut TutorialPart01	"Tutorial Part 1: Introduction"			--camera 0,0,0,55,0,25,100
-#tut TutorialPart02	"Tutorial Part 2: Geometric Primitives"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
-#tut TutorialPart03	"Tutorial Part 3: Transformations"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+#tut TutorialPart01	"Tutorial Part 1: Introduction"				--camera 0,0,0,55,0,25,100
+#tut TutorialPart02	"Tutorial Part 2: Geometric Primitives"			--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+#tut TutorialPart03	"Tutorial Part 3: Transformations"			--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
 #tut TutorialPart04	"Tutorial Part 4: Constructive Solid Geometry (CSG)"	--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
 #tut TutorialPart05	"Tutorial Part 5: Modifiers, Mesh Resolution"		--backend=manifold --camera 10,00,15,85,0,10,100
 #tut TutorialPart06	"Tutorial Part 6: Math and Functions"			--render=solid --backend=manifold --camera 0,0,0,55,0,25,140
@@ -63,5 +63,6 @@ tut() {
 #tut TutorialPart09	"Tutorial Part 9: Modules"				--render=solid --backend=manifold --camera 0,0,10,55,0,25,400
 #tut TutorialPart10	"Tutorial Part 10: Putting things together"		--backend=manifold --camera 0,0,10,55,0,25,400
 #tut TutorialPart11	"Tutorial Part 11: Rounded Rectangles, lots of them!"	--render=solid --backend=manifold --camera 15,10,10,40,0,25,140
-tut TutorialPart12	"Tutorial Part 12: Loops and chain hulls"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
+#tut TutorialPart12	"Tutorial Part 12: Loops and chain hulls"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
 #tut TutorialPart13	"Tutorial Part 13: Recursive Snowflakes!"		--render=solid --backend=manifold --colorscheme "Nocturnal Gem" --camera 1,-0.6,1.5,30.5,0,13.8,208
+tut TutorialPart14	"Tutorial Part 14: Polygons and Polyhedrons"		--backend=manifold --camera 0,0,10,55,0,25,250
