@@ -94,6 +94,11 @@ setDay(19, { author: 'Ulrich Bär', license: 'CC0', dir: 'TutorialPart14',
         src: 'TutorialPart14.scad',
 	info: '<p>Tutorial Part 14, Polygons and Polyhedrons.</p>'
 });
+setDay(21, { author: 'Ulrich Bär', license: 'CC0', dir: 'Star',
+        img: 'Star.gif',
+        src: 'Star.scad',
+	info: '<p>Happy Solstice - A recursive fractal star is born.</p>'
+});
 setDay(22, { author: 'Jordan Brown', license: 'CC0', dir: 'Nessie',
         img: 'Nessie.png',
         src: 'Nessie.scad',
@@ -104,3 +109,4 @@ setDay(23, { author: 'Stone Age Sculptor', license: 'CC0', dir: 'ChristmasA-Z',
         src: 'ChristmasA-Z.scad',
 	info: '<p>See also thread on <a href="https://www.reddit.com/r/openscad/comments/1gr3xgb/working_towards_scadvent/">reddit</a>.</p>'
 });
+
