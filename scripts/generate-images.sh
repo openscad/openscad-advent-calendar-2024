@@ -65,4 +65,5 @@ tut() {
 #tut TutorialPart11	"Tutorial Part 11: Rounded Rectangles, lots of them!"	--render=solid --backend=manifold --camera 15,10,10,40,0,25,140
 #tut TutorialPart12	"Tutorial Part 12: Loops and chain hulls"		--render=solid --backend=manifold --camera 0,0,0,55,0,25,100
 #tut TutorialPart13	"Tutorial Part 13: Recursive Snowflakes!"		--render=solid --backend=manifold --colorscheme "Nocturnal Gem" --camera 1,-0.6,1.5,30.5,0,13.8,208
-tut TutorialPart14	"Tutorial Part 14: Polygons and Polyhedrons"		--backend=manifold --camera 0,0,10,55,0,25,250
+#tut TutorialPart14	"Tutorial Part 14: Polygons and Polyhedrons"		--backend=manifold --camera 0,0,10,55,0,25,250
+tut TutorialPart15	"Tutorial Part 15: Assemblies"				--backend=manifold --camera 0,0,130,80,0,25,900

@@ -73,6 +73,10 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart14/TutorialPart14.gif" width="250">
 <p>Tutorial Part 14, Polygons and Polyhedrons.</p>
 
+## 20. TutorialPart15 (Torsten Paul | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/TutorialPart15/TutorialPart15.gif" width="250">
+<p>Tutorial Part 15, Assemblies.</p>
+
 ## 21. Star (Ulrich Bär | CC0)
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/Star/Star.gif" width="250">
 <p>Happy Solstice - A recursive fractal star is born.</p>

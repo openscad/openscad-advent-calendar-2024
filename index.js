@@ -94,6 +94,11 @@ setDay(19, { author: 'Ulrich Bär', license: 'CC0', dir: 'TutorialPart14',
         src: 'TutorialPart14.scad',
 	info: '<p>Tutorial Part 14, Polygons and Polyhedrons.</p>'
 });
+setDay(20, { author: 'Torsten Paul', license: 'CC0', dir: 'TutorialPart15',
+        img: 'TutorialPart15.gif',
+        src: 'TutorialPart15.scad',
+	info: '<p>Tutorial Part 15, Assemblies.</p>'
+});
 setDay(21, { author: 'Ulrich Bär', license: 'CC0', dir: 'Star',
         img: 'Star.gif',
         src: 'Star.scad',
