@@ -94,15 +94,21 @@ tube();
 // slicing software.
 
 module lamp() {
-	cylinder(d1 = 0.6 * lamp_od, d2 = lamp_od, h = lamp_h / 3);
-	translate([0, 0, lamp_h / 3])
-		cylinder(d1 = lamp_od, d2 = tube_id - 2 * tolerance, h = lamp_h / 3 * 2);
-	cylinder(d = tube_id - 2 * tolerance, h = lamp_h + 10);
+	cylinder(d1 = 0.6 * lamp_od, d2 = lamp_od, h = lamp_h / 3 - wall);
+	translate([0, 0, lamp_h / 3]) rotate_extrude() hull() {
+		translate([0, -wall]) square(2 * wall + 0.2);
+		translate([lamp_od / 2, 0]) scale([0.6, 1]) circle(wall + 0.1);
+	}
+	translate([0, 0, lamp_h / 3 + wall])
+		cylinder(d1 = lamp_od, d2 = tube_id - 2 * tolerance, h = lamp_h / 3 * 2 - wall);
+	translate([0, 0, 10])
+	cylinder(d = tube_id - 2 * tolerance, h = lamp_h);
+	
 }
 
 if (step == 3) {
 
-lamp();
+%lamp();
 
 }
 
