@@ -108,7 +108,7 @@ module lamp() {
 
 if (step == 3) {
 
-%lamp();
+lamp();
 
 }
 
