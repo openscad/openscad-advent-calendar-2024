@@ -89,3 +89,7 @@ Designs for the OpenSCAD Advent Calendar 2024
 <img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/ChristmasA-Z/ChristmasA-Z.gif" width="250">
 <p>See also thread on <a href="https://www.reddit.com/r/openscad/comments/1gr3xgb/working_towards_scadvent/">reddit</a>.</p>
 
+## 24. Christmas Breeze (Ryan A. Colyer | CC0)
+<img src="https://github.com/openscad/openscad-advent-calendar-2024/blob/main/ChristmasBreeze/ChristmasBreeze.webp" width="250">
+<p>A procedurally generated Christmas Tree gently swaying in the breeze by using affine transformation matrices for more nuanced control.</p>
+

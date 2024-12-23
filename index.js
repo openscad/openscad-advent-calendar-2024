@@ -114,4 +114,9 @@ setDay(23, { author: 'Stone Age Sculptor', license: 'CC0', dir: 'ChristmasA-Z',
         src: 'ChristmasA-Z.scad',
 	info: '<p>See also thread on <a href="https://www.reddit.com/r/openscad/comments/1gr3xgb/working_towards_scadvent/">reddit</a>.</p>'
 });
+setDay(24, { author: 'Ryan A. Colyer', license: 'CC0', dir: 'ChristmasBreeze',
+        img: 'ChristmasBreeze.webp',
+        src: 'ChristmasBreeze.scad',
+	info: '<p>A procedurally generated Christmas Tree gently swaying in the breeze by using affine transformation matrices for more nuanced control.</p>'
+});
 
